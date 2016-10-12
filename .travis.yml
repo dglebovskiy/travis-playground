@@ -1,8 +1,9 @@
+dist: trusty
+sudo: required
 language: generic
-sudo: true
 addons:
         apt:
                 packages:
-                - mysql-core
+                - mysql-common
                 - mysql-server
                 - mysql-client
