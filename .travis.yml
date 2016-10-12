@@ -3,7 +3,7 @@ sudo: required
 language: generic
 before_install:
         sudo dpkg -P mysql
-after_install:
+install:
         sudo mysqld --initialize-insecure
 addons:
         apt:
