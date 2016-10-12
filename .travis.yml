@@ -1,6 +1,8 @@
 dist: trusty
 sudo: required
 language: generic
+before_install:
+        sudo dpkg -P mysql
 addons:
         apt:
                 sources:
@@ -9,3 +11,4 @@ addons:
                 - mysql-common
                 - mysql-server
                 - mysql-client
+                - mysql-connector-python
