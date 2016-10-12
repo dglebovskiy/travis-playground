@@ -1,0 +1,7 @@
+language: generic
+addons:
+        apt:
+                packages:
+                - mysql-core
+                - mysql-server
+                - mysql-client
