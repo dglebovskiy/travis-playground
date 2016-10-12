@@ -3,6 +3,8 @@ sudo: required
 language: generic
 addons:
         apt:
+                sources:
+                - sourceline: 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7'
                 packages:
                 - mysql-common
                 - mysql-server
