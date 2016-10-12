@@ -3,6 +3,8 @@ sudo: required
 language: generic
 before_install:
         sudo dpkg -P mysql
+after_install:
+        sudo mysqld --initialize-insecure
 addons:
         apt:
                 sources:
@@ -11,4 +13,3 @@ addons:
                 - mysql-common
                 - mysql-server
                 - mysql-client
-                - mysql-connector-python
